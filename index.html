@@ -3,135 +3,201 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Todo app</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    
   </head>
   <body>
-    <div class="image-background">
-      <img src="images/bg-desktop-light.jpg" alt="" />
+    <div class="back-ground-image">
+      <img src="/images/bg-desktop-light.jpg" alt="" />
     </div>
-    <!--main item-->
     <div class="main">
-      <div class="header">
-        <div class="logo">
-          <h1>TODO</h1>
+      <div class="logo-holder">
+        <div><h1>TODO</h1></div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+            <path
+              fill="#FFF"
+              fill-rule="evenodd"
+              d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
+            />
+          </svg>
         </div>
-        <div class="moon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg>
+      </div>
+      <div class="user-input">
+        <div class="svg-holder"></div>
+        <div class="typing">
+          <input id="input-details" type="text" placeholder="Add Tasks Here" />
         </div>
       </div>
 
-      <div class="todo">
-        <div class="ticker">
-          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path fill="none" stroke="#FFF" stroke-width="1" d="M1 4.304L3.696 7l6-6"/></svg>
-        </div>
-        <div class="input-placeholder">
-          <input type="text" placeholder="Create a new todo.." class="place-holder" id="todoInput" />
-        </div>
-      </div>
-      <div class="course-container">
-        <ul>
-          <div class="lists">
-          <div class="ticker">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-          </div>
-          <div>
-            <li>Complete Online Javascript Course</li>
-          </div>
-          <div class="x-factor">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-          </div>
-        </div>
-        <div class="lists">
-          <div class="ticker">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-          </div>
-          <div>
-            <li>Jog around the park 3x</li>
-          </div>
-          <div class="x-factor">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-          </div>
-        </div>
+      <div class="list-container">
+        <div class="add-list">
+          <ul>
+            <div class="task">
+              <div class="add-factor">
+                <div class="svg-holder1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M1 4.304L3.696 7l6-6"
+                    />
+                  </svg>
+                </div>
+                <div><li>Complete Javascript Online Course</li></div>
+              </div>
+              <div class="x-factor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                  <path
+                    fill="#494C6B"
+                    fill-rule="evenodd"
+                    d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"
+                  />
+                </svg>
+              </div>
+            </div>
 
-        <div class="lists">
-          <div class="ticker">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-          </div>
-          <div>
-            <li>10 minutes meditation</li>
-          </div>
-          <div class="x-factor">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-          </div>
-        </div>
+            <div class="task">
+              <div class="add-factor">
+                <div class="svg-holder1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M1 4.304L3.696 7l6-6"
+                    />
+                  </svg>
+                </div>
+                <div><li>Jog around the park 3X</li></div>
+              </div>
+              <div class="x-factor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                  <path
+                    fill="#494C6B"
+                    fill-rule="evenodd"
+                    d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"
+                  />
+                </svg>
+              </div>
+            </div>
 
-        <div class="lists">
-          <div class="ticker">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-          </div>
-          <div>
-            <li>Read for hour</li>
-          </div>
-          <div class="x-factor">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-          </div>
-        </div>
+            <div class="task">
+              <div class="add-factor">
+                <div class="svg-holder1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M1 4.304L3.696 7l6-6"
+                    />
+                  </svg>
+                </div>
+                <div><li>10 minutes meditation</li></div>
+              </div>
+              <div class="x-factor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                  <path
+                    fill="#494C6B"
+                    fill-rule="evenodd"
+                    d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"
+                  />
+                </svg>
+              </div>
+            </div>
 
-        
-        <div class="lists">
-          <div class="ticker">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-          </div>
-          <div>
-            <li>Pick up grocies</li>
-          </div>
-          <div class="x-factor">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-          </div>
-        </div>
+            <div class="task">
+              <div class="add-factor">
+                <div class="svg-holder1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M1 4.304L3.696 7l6-6"
+                    />
+                  </svg>
+                </div>
+                <div><li>Read for one hour</li></div>
+              </div>
+              <div class="x-factor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                  <path
+                    fill="#494C6B"
+                    fill-rule="evenodd"
+                    d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"
+                  />
+                </svg>
+              </div>
+            </div>
 
-        <div class="lists">
-          <div class="ticker">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-          </div>
-          <div>
-            <li>Complete Todo App on Frontend Mentor</li>
-          </div>
-          <div class="x-factor">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
-          </div>
-        </div>
-         
-        </ul>
-      </div>
+            <div class="task">
+              <div class="add-factor">
+                <div class="svg-holder1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M1 4.304L3.696 7l6-6"
+                    />
+                  </svg>
+                </div>
+                <div><li>Pick up groceries</li></div>
+              </div>
+              <div class="x-factor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                  <path
+                    fill="#494C6B"
+                    fill-rule="evenodd"
+                    d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"
+                  />
+                </svg>
+              </div>
+            </div>
 
-      <div class="footer">
-        <div id="items-left">6 items left</div>
-        <div class="middle-grid">
-        <div>All</div>
-        <div>Active</div>
-        <div>Completed</div>
+            <div class="task">
+              <div class="add-factor">
+                <div class="svg-holder1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M1 4.304L3.696 7l6-6"
+                    />
+                  </svg>
+                </div>
+                <div><li>Complete todo app on Frontend mentor</li></div>
+              </div>
+              <div class="x-factor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                  <path
+                    fill="#494C6B"
+                    fill-rule="evenodd"
+                    d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </ul>
         </div>
-        <div>clear Completed</div>
+        <div class="footer-container">
+          <div class="footer">
+            <div id="Items-left">Items left</div>
+            <div class="middle-footer">
+              <div id="all"><p>All</p></div>
+              <div id="Active"><p>Active</p></div>
+              <div id="Completed"><p>Completed</p></div>
+            </div>
+            <div id="Clear">Clear Completed</div>
+          </div>
+        </div>
       </div>
     </div>
+
     <script src="dom.js"></script>
   </body>
 </html>

@@ -7,12 +7,9 @@
   --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
 }
 
-* {
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
   background-color: var(--Very-Light-Gray);
   width: 100vw;
   height: 100vh;
@@ -20,156 +17,254 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.image-background {
+.back-ground-image {
+  width: 100%;
+  height: 35vh;
+  margin: auto;
   position: relative;
-  display: grid;
-  place-items: center;
-  width: 100%;
-}
-.image-background img {
-  width: 100%;
-  height: 40vh;
   z-index: 1;
 }
 
-.main {
-  position: relative;
-  width: 40vw;
-  height: 90vh;
-  margin: auto;
-  z-index: 2;
-  top: -13rem;
-  border-radius: 20px;
+.back-ground-image img {
+  width: 100%;
+  height: 100%;
 }
 
-.header{
+.main {
+  width: 37vw;
+  height: 70vh;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  top: -10rem;
+  border-radius: 1rem;
+}
+
+.logo-holder {
+  height: 10vh;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 10px;
-  height: 10vh;
+  align-items: center;
 }
 
-.header h1 {
+.logo-holder h1 {
   color: var(--Very-Light-Gray);
-  letter-spacing: .7rem;
 }
 
-.todo{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  height: 8vh;
-  width: 40vw;
+.user-input {
   background-color: var(--Very-Light-Gray);
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-
-.todo > .ticker{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid var(--Very-Dark-Grayish-Blue);
-}
-
-.input-placeholder{
-  width: 40vw;
+  margin-bottom: 10px;
   height: 6vh;
-  background-color: var(--Very-Light-Gray);
-}
-.place-holder{
-  width: 90%;
-  height: 100%;
-  border: none;
-  padding-left: 10px;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.course-container{
-  height: 62vh;
-  background-color: var(--Very-Light-Gray);
-  border-radius: 10px;
-  border: 2px solid var(--Dark-Grayish-Blue);
-  border-bottom: none;
-}
-
-.lists{
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  height: 6.8vh;
-  border-bottom: 2px solid var(--Dark-Grayish-Blue);
+  gap: 20px;
   align-items: center;
+  padding-left: 20px;
+  border-radius: 7px;
 }
 
-.lists li{
-  list-style: none;
-}
-
-.ticker{
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--Dark-Grayish-Blue);
-  border-radius: 50%;
+.svg-holder {
+  border: 2px solid black;
+  width: 1.2rem;
+  height: 1.2rem;
   display: grid;
   place-items: center;
-  margin-left: 20px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
-.ticker:hover{
+.svg-holder:hover {
   background-color: hsl(220, 98%, 61%);
 }
 
-.x-factor{
-  margin-left: auto;
+#input-details {
+  border: none;
+  background-color: var(--Very-Light-Gray);
+}
+
+.list-container {
+  background-color: var(--Very-Light-Gray);
+  height: 55vh;
+  border: 2px solid var(--Very-Light-Grayish-Blue);
+  border-radius: 10px;
+}
+
+.add-list {
+  height: 47vh;
+  width: 37vw;
+}
+
+.add-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.task {
+  border-bottom: 2px solid var(--Dark-Grayish-Blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  height: 7.8vh;
+}
+
+.add-factor {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-factor li {
+  list-style: none;
+}
+
+.svg-holder1 {
+  border: 2px solid black;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.svg-holder1:hover {
+  background-color: hsl(220, 98%, 61%);
+}
+
+.x-factor svg {
   padding-right: 20px;
   cursor: pointer;
 }
 
-
-.footer{
-  height: 10vh;
+.footer {
+  height: 8vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  place-items: center;
-  color: var(--Dark-Grayish-Blue);
-  border: 2px solid var(--Dark-Grayish-Blue);
-  border-radius: 10px;
-  border-top: none;
-}
-
-.middle-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-}
-.middle-grid:hover{
-  cursor: pointer;
   color: var(--Very-Dark-Grayish-Blue);
 }
 
+#Items-left {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
 
+.middle-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  place-items: center;
+}
 
+#all {
+  cursor: pointer;
+}
 
-.course-container {
-  height: 42vh;
+#all p:hover {
+  color: black;
+}
+
+#Active {
+  cursor: pointer;
+}
+
+#Active p:hover {
+  color: black;
+}
+
+#Completed {
+  cursor: pointer;
+}
+#Completed p:hover {
+  color: black;
+}
+
+#Clear {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.list-container {
   background-color: var(--Very-Light-Gray);
+  height: 55vh;
+  max-height: 55vh;
+  overflow-y: auto;
+  overflow-x: hidden; /* Add overflow-x to hide horizontal scrolling */
+  border: 2px solid var(--Very-Light-Grayish-Blue);
   border-radius: 10px;
-  border: 2px solid var(--Dark-Grayish-Blue);
-  border-bottom: none;
-  overflow-y: auto; /* Enable vertical scrolling */
 }
 
-.course-container ul {
-  padding: 0;
-  margin: 0;
+.add-list {
+  height: 100%;
+  width: 37vw;
+  overflow-y: auto;
+  overflow-x: hidden; /* Add overflow-x to hide horizontal scrolling */
 }
 
-.completed {
-  text-decoration: line-through;
+.list-container {
+  position: relative; /* Set position to relative to establish a positioning context */
+  background-color: var(--Very-Light-Gray);
+  height: 55vh;
+  max-height: 55vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px solid var(--Very-Light-Grayish-Blue);
+  border-radius: 10px;
+}
+
+.add-list {
+  height: calc(
+    100% - 8vh
+  ); /* Adjust the height to leave space for the fixed footer */
+  width: 37vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.footer-container {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; /* Ensure the footer is above other elements */
+}
+
+.footer {
+  height: 8vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  color: var(--Very-Dark-Grayish-Blue);
+  background-color: var(
+    --Very-Light-Gray
+  ); /* Match the background color of the list container */
+}
+
+/* Rest of your existing CSS styles */
+
+.task {
+  border-bottom: 2px solid var(--Dark-Grayish-Blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  height: 7.8vh;
+  text-decoration: none; /* Add text-decoration property to ensure strike-through works */
+}
+
+.completed .task {
+  text-decoration: line-through; /* Apply strike-through effect for completed tasks */
 }
